@@ -1,3 +1,7 @@
+//console.log(screenValue);
+/*Dit wordt de code voor een calculator*/
+
+
 var screenValue;
 
 
@@ -16,7 +20,7 @@ function pressButton1() {
 function pressButton2() {
   screenValue = document.getElementById("display").innerHTML;
   document.getElementById("display").innerHTML = screenValue +"2";
-  console.log(screenValue);
+  
 }
 
 function pressButton3() {
