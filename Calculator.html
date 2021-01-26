@@ -7,37 +7,37 @@
 
 <title>Calculator</title>
 
-<link rel=stylesheet href="calculatorStyle.css"
+<link rel=stylesheet href="calculatorStyle.css">
 
 </head>
 
 <body>
-    <header>Calculator</header>
+    <header><b>Calculator</b></header>
 
 <div class="interface">
-    <div class="display"></div>
-    <div class="item2">=</div>
-    <div class="item3">7</div>
-    <div class="item4">8</div>
-    <div class="item5">9</div>
-    <div class="item6">+</div>
-    <div class="item7">4</div>
-    <div class="item8">5</div>
-    <div class="item9">6</div>
-    <div class="item10">-</div>
-    <div class="item11">1</div>
-    <div class="item12">2</div>
-    <div class="item13">3</div>
-    <div class="item14">x</div>
-    <div class="item15">del</div>
-    <div class="item16">0</div>
-    <div class="item17">,</div>
-    <div class="item18">/</div>
-  </div>
+    <button class="display" id= "display"></button>
+    <button class="operator" id= "Button_resolve">=</button>
+  
+    <button class="button" type="Button_7" onclick= "pressButton7()">7</button>
+    <button class="button" type="Button_8" onclick= "pressButton8()">8</button>    
+    <button class="button" type="Button_9" onclick= "pressButton9()">9</button>
+    <button class="operator" id = "Button_plus">+</button>
+    <button class="button" type="Button_4" onclick= "pressButton4()">4</button>
+    <button class="button" type="Button_5" onclick= "pressButton5()">5</button>
+    <button class="button" type="Button_6" onclick= "pressButton6()">6</button>
+    <button class="operator"  id= Button_minus>-</button>
+    <button class="button" type="Button_1" onclick= "pressButton1()">1</button>
+    <button class="button" type="Button_2" onclick= "pressButton2()">2</button>
+    <button class="button" type="Button_3" onclick= "pressButton3()">3</button>
+    <button class="operator" id= Button_multiplier>x</button>
+    <button class="operator" type="Button_clear" onclick= "pressButtonClear()">C</button>
+    <button class="button" type="Button_0" onclick= "pressButton0()">0</button>
+    <button class="operator" id= Button_comma>,</button>
+    <button class="operator" id= Button_divide>/</button>
+</div>
 
 
-
-
+<script src="calculator_javascript.js"></script>
 
 </body>
 </html>
