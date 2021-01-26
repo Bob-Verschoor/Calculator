@@ -35,6 +35,7 @@ header {
     font-size: 200%;
     border: none;
     text-align: right;
+    padding: 25px;    
 }    
 
 .button {
