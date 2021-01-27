@@ -1,66 +1,102 @@
-//console.log(screenValue);
 /*Dit wordt de code voor een calculator*/
 
+var value1;
+var operator = "";
 
-var screenValue;
+//operators
+function pressPlus() {
+  value1 = Number(document.getElementById('display').value);
+  operator = "plus";
+  document.getElementById('display').value = '';
+}
+
+function pressMinus() {
+  value1 = Number(document.getElementById('display').value);
+  operator = "minus";
+  document.getElementById('display').value = '';
+}
+
+function pressDivide() {
+  value1 = Number(document.getElementById('display').value);
+  operator = "divide";
+  document.getElementById('display').value = '';
+}
+
+function pressMultiply() {
+  value1 = Number(document.getElementById('display').value);
+  operator = "multiply";
+  document.getElementById('display').value = '';
+}
+
+//resolve
+
+function pressResolve() {
+  var value2 = Number(document.getElementById('display').value);
+
+  if (operator == "plus") {
+      document.getElementById('display').value = value1 + value2;
+      
+  } else if (operator == "minus") {
+      document.getElementById('display').value = value1 - value2;
+  
+  } else if (operator == "multiply") {
+          document.getElementById('display').value = value1 * value2;
+
+  } else if (operator == "divide") {
+      document.getElementById('display').value = value1 / value2;
+  }
+}
+
+
+//clear screen
+
+function pressButtonClear() {
+  document.getElementById("display").value = '';
+}
 
 
 //numbers
 
 function pressButton0() {
-  screenValue = document.getElementById("display").innerHTML;
-  document.getElementById("display").innerHTML = screenValue +"0";
+  document.getElementById("display").value += 0;
 }
 
 function pressButton1() {
-  screenValue = document.getElementById("display").innerHTML;
-  document.getElementById("display").innerHTML = screenValue +"1";
+  document.getElementById("display").value += 1;
 }
 
 function pressButton2() {
-  screenValue = document.getElementById("display").innerHTML;
-  document.getElementById("display").innerHTML = screenValue +"2";
-  
+  document.getElementById("display").value += 2;
 }
 
 function pressButton3() {
-  screenValue = document.getElementById("display").innerHTML;
-  document.getElementById("display").innerHTML = screenValue +"3";
+  document.getElementById("display").value += 3;
 }
 
 function pressButton4() {
-  screenValue = document.getElementById("display").innerHTML;
-  document.getElementById("display").innerHTML = screenValue +"2";
+  document.getElementById("display").value += 4;
 }
 
 function pressButton5() {
-  screenValue = document.getElementById("display").innerHTML;
-  document.getElementById("display").innerHTML = screenValue +"5";
+  document.getElementById("display").value += 5;
 }
 
 function pressButton6() {
-  screenValue = document.getElementById("display").innerHTML;
-  document.getElementById("display").innerHTML = screenValue +"6";
+  document.getElementById("display").value += 6;
 }
 
 function pressButton7() {
-  screenValue = document.getElementById("display").innerHTML;
-  document.getElementById("display").innerHTML = screenValue +"7";
+  document.getElementById("display").value += 7;
 }
 
 function pressButton8() {
-  screenValue = document.getElementById("display").innerHTML;
-  document.getElementById("display").innerHTML = screenValue +"8";
+  document.getElementById("display").value += 8;
 }
 
 function pressButton9() {
-  screenValue = document.getElementById("display").innerHTML;
-  document.getElementById("display").innerHTML = screenValue +"9";
+  document.getElementById("display").value += 9;
 }
 
-
-//Clear display
-
-function pressButtonClear() {
-  document.getElementById("display").innerHTML = "";
+function pressComma() {
+  document.getElementById("display").value += ',';
 }
